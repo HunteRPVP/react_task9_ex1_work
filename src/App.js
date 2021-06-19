@@ -1,7 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import "./App.css";
-import loading from "./1487.gif";
+// import loading from "./1487.gif";
 
 // const ProfileDetails = lazy(() => import("./ProfileDetails"));
 // const ProfilePosts = lazy(() => import("./ProfilePosts"));
@@ -13,12 +13,13 @@ const Posts = lazy(() => import("./Posts"));
 const NotFound = () => <h1>404 Страница не найдена</h1>;
 
 const Spinner = () => (
-  <img
-    src={loading}
-    alt="loading..."
-    loop="infinite"
-    style={{ width: "50px", margin: "auto", display: "block" }}
-  />
+  // <img
+  //   src={loading}
+  //   alt="loading..."
+  //   loop="infinite"
+  //   style={{ width: "50px", margin: "auto", display: "block" }}
+  // />
+  <h4>loading...</h4>
 );
 
 function App() {
